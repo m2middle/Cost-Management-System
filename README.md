@@ -1,0 +1,1 @@
+Conmansys API: This API is a cost management system built for small companies, within the needs of the Supply Chain area. It has CRUD of employees, suppliers, invoices, departments, categories, contracts and also an inventory system based on an initial forked project of @RFirmin.
