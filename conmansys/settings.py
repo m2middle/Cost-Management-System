@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'suppliers',
     'rest_framework',
     'rest_framework.authtoken',
+    'inventory',
+    'conmansys',
 ]
 
 MIDDLEWARE = [

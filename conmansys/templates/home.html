@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bienvenue sur Conmansys API!</title>
+    <style>
+        .button {
+            margin: 10px;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome on Conmansys API!</h1>
+    <p>This is the landing page of Conmansys API.</p>
+
+    <h2>Functionnalities</h2>
+    <a href="/categories/" class="button">Catégories</a>
+    <a href="/employees/" class="button">Employés</a>
+    <a href="/contracts/" class="button">Contrats</a>
+    <a href="/departments/" class="button">Départements</a>
+    <a href="/inventory/" class="button">Inventaire</a>
+    <a href="/suppliers/" class="button">Fournisseurs</a>
+
+    <h2>Authentification</h2>
+    {% if user.is_authenticated %}
+        <p>Bonjour, {{ user.username }}!</p>
+        <a href="/logout/" class="button">Se déconnecter</a>
+    {% else %}
+        <a href="/employees/login/" class="button">Se connecter</a>
+        <a href="/register/" class="button">S'inscrire</a>
+    {% endif %}
+</body>
+</html>
