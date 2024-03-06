@@ -29,9 +29,9 @@ load_dotenv()
 SECRET_KEY = os.getenv('PGSECRETKEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['conmansys.azurewebsites.net']
+ALLOWED_HOSTS = []
 
 
 # Application definition
