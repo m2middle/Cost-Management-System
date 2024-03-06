@@ -8,9 +8,10 @@ from drf_spectacular.views import (
 )
 
 urlpatterns = [
-    path("employees/", views.EmployeeView.as_view()),
-    path("employees/<int:pk>/", views.EmployeeDetailView.as_view()),
-    path("employees/login/", jwt_views.TokenObtainPairView.as_view()),
+    path("", views.EmployeeView.as_view()),
+    path("<int:pk>/", views.EmployeeDetailView.as_view()),
+    path("login/", jwt_views.TokenObtainPairView.as_view()),
+    path("login/", jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path("schema/", SpectacularAPIView.as_view(), name="schema"),
     path(
         "docs/swagger-ui/",
