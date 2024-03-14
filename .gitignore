@@ -15,6 +15,9 @@ vendor/
 # Ignorer les fichiers de logs
 logs/
 
-# Ignorer les fichiers de données sensibles
+#Ignore the stored environment variables file
 .env
 credentials.json
+
+#Ignore the virtual environment created for test
+venv/
